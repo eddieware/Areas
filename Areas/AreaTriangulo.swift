@@ -27,7 +27,7 @@ struct AreaTriangulo: View {
             .frame(width: 150.0, height: 180.0, alignment: .center)
             //.clipShape(Circle())
             Form{
-                Section(header: Text("Datos de Entrada")){
+                Section(header: Text("Datos para el Calculo")){
                     Text("Longitud de la base")
                     TextField("Base:", text: $base)
                     .keyboardType(.decimalPad)

@@ -11,20 +11,43 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
+            
             List {
+                
                 //Uso del Navigation Link
                 NavigationLink(destination: AreaTriangulo()){
                     HStack{
                         Image("triangulo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 80.0, height: 100.0)
+                            .frame(width: 100.0, height: 100.0)
                         Text("Área del Triangulo")
                     }
+                }// Fin triangulo
+                
+                NavigationLink(destination: AreaCirculo()){
+                    HStack{
+                        Image("circulo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100.0, height: 100.0)
+                        Text("Área del Circulo")
+                    }
+                }// fin ciruculo
+                NavigationLink(destination: AreaRectangulo()){
+                    HStack{
+                        Image("rectangulo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100.0, height: 100.0)
+                        Text("Area del Rectangulo")
+                    }
                 }
+                
+
                
                 
-            }
+            }.navigationBarTitle("Areas App")
         }//Fin List
     }
 }
@@ -34,4 +57,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-}
+
