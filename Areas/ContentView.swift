@@ -43,10 +43,7 @@ struct ContentView: View {
                         Text("Area del Rectangulo")
                     }
                 }
-                
-
-               
-                
+    
             }.navigationBarTitle("Areas App")
         }//Fin List
     }
